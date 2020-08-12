@@ -414,6 +414,7 @@ body {
   border: none;
   border-radius: 50%;
   background-color: var(--logo-bgr-color) 10%;
+  fill: var(--clnt-bord);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -421,7 +422,7 @@ body {
 
 .soc-link:hover {
   background-color: var(--weblog-btn-link);
-  --color4: var(--logo-bgr-color);
+  fill: var(--logo-bgr-color);
 }
 
 /* Клиенты */
@@ -474,7 +475,7 @@ body {
   border-radius: 4px;
 
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter:hover,
 .filter:focus,
@@ -658,7 +659,7 @@ body {
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  --color4: var(--logo-bgr-color);
+  fill: var(--logo-bgr-color);
 }
 
 .footsoc-block a:not(:last-child) {
@@ -668,6 +669,10 @@ body {
 .footer-soc,
 .footer-registr {
   margin-bottom: 20px;
+}
+
+.soc-link svg {
+  fill: (--logo-bgr-color);
 }
 
 .mail-btn {
